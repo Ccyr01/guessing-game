@@ -68,7 +68,7 @@ def start_game():
 
     #     a. If they decide to play again, start the game loop over.
     if play_again_choice.lower() == 'y' or play_again_choice.lower() == "yes":
-        print(f'High Score = {max(attempt_list)}')
+        print(f'High Score = {min(attempt_list)}')
         start_game()
     #     b. If they decide to quit, show them a goodbye message.
     elif play_again_choice.lower() == 'n' or play_again_choice.lower() == "no":
